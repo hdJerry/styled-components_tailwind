@@ -76,4 +76,4 @@ Builds the css into style.css in assets folder.
 This should be run whenever you make a modification using the tailwind class
 
 ### JIT Tailwind
-Doc for tailwind just in time [https://tailwindcss.com/docs/just-in-time-mode](JIT)
+Doc for tailwind just in time [JIT](https://tailwindcss.com/docs/just-in-time-mode)
