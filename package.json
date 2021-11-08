@@ -6,12 +6,17 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "postcss": "^8.3.11",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
+    "styled-components": "^5.3.3",
+    "tailwindcss": "^2.2.19",
+    "twin.macro": "^2.8.1",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
+    "build:css": "postcss src/assets/tailwind.css -o src/assets/styles.css",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -22,6 +27,12 @@
       "react-app",
       "react-app/jest"
     ]
+  },
+  "babelMacros": {
+    "twin": {
+      "config": "./src/tailwind.config.js",
+      "preset": "styled-components"
+    }
   },
   "browserslist": {
     "production": [
@@ -34,5 +45,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "autoprefixer": "10.3.1",
+    "babel-plugin-macros": "3.1.0",
+    "postcss-cli": "^9.0.2"
   }
 }

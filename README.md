@@ -68,3 +68,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+### `yarn build:css`
+
+Builds the css into style.css in assets folder.
+This should be run whenever you make a modification using the tailwind class
+
+### JIT Tailwind
+Doc for tailwind just in time [https://tailwindcss.com/docs/just-in-time-mode](JIT)
