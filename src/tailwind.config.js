@@ -1,15 +1,17 @@
 module.exports = {
   darkMode: false, // or 'media' or 'class'
   mode: 'jit',//This helps you create your own custom class e.g bg-[#000]
-   purge: {
-     enabled: true,
-     content: [
-       './src/**/*.html',
-       './src/**/*.jsx',
-       './src/**/*.js',
-       './src/**/*.css',
-     ],
-   },
+  // Uncomment the purge object when you wanna build for production 
+  // so as to remove tailwind classes that is not in use to reduce the styles.css file size for optimazation
+  //  purge: {
+  //    enabled: true,
+  //    content: [
+  //      './src/**/*.html',
+  //      './src/**/*.jsx',
+  //      './src/**/*.js',
+  //      './src/**/*.css',
+  //    ],
+  //  },
   theme: {
     extend: {
       screens: {
